@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
         $this->call(UsersTableSeeder::class);
     }
 
-    protected function truncateDatabase(): void
+    private function truncateDatabase(): void
     {
         Schema::disableForeignKeyConstraints();
 
