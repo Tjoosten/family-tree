@@ -18,6 +18,8 @@ class DatabaseSeeder extends Seeder
         $this->truncateDatabase();
 
         // Run additional seeders
+        $this->call(RoleTableSeeder::class);
+        $this->call(UsersTableSeeder::class);
     }
 
     protected function truncateDatabase(): void
